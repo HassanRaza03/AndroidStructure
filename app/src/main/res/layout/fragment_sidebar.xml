@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="1"
+            android:background="@drawable/b_menu_bg"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60dp"
+                    android:layout_marginLeft="@dimen/x40dp"
+                    android:layout_marginRight="@dimen/x40dp"
+                    android:layout_marginTop="@dimen/x20dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/google_logo" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60dp"
+                    android:layout_marginBottom="@dimen/x20dp"
+                    android:layout_marginLeft="@dimen/x40dp"
+                    android:layout_marginRight="@dimen/x40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_tekrevol_logo" />
+
+
+                <com.android.structure.widget.AnyTextView
+                    android:id="@+id/txtHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/x5dp"
+                    android:drawableStart="@drawable/b_home_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/x15dp"
+                    android:singleLine="true"
+                    android:text="Home"
+                    android:textColor="@color/c_white"
+                    android:textSize="16sp"
+                    app:typeface="@string/font_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/c_white" />
+
+
+                <com.android.structure.widget.AnyTextView
+                    android:id="@+id/txtCardSubscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/x5dp"
+                    android:drawableStart="@drawable/c_cardsubscription_menu_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/x15dp"
+                    android:singleLine="true"
+                    android:text="Card Subscription"
+                    android:textColor="@color/c_white"
+android:visibility="gone"
+                    android:textSize="16sp"
+                    app:typeface="@string/font_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/c_white" />
+
+                <com.android.structure.widget.AnyTextView
+                    android:id="@+id/txtPreferences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/x5dp"
+                    android:drawableStart="@drawable/ic_settings"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/x15dp"
+                    android:singleLine="true"
+                    android:text="Settings"
+                    android:textColor="@color/c_white"
+                    android:textSize="16sp"
+
+                    android:visibility="visible"
+                    app:typeface="@string/font_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/c_white" />
+
+                <com.android.structure.widget.AnyTextView
+                    android:id="@+id/txtAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawablePadding="@dimen/x5dp"
+                    android:drawableStart="@drawable/c_about_menu_icon"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/x15dp"
+                    android:singleLine="true"
+                    android:text="About"
+                    android:textColor="@color/c_white"
+
+                    android:textSize="16sp"
+                    app:typeface="@string/font_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/c_white" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.android.structure.widget.AnyTextView
+                        android:id="@+id/txtLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/x25dp"
+                        android:layout_marginLeft="@dimen/x20dp"
+                        android:layout_marginRight="@dimen/x20dp"
+                        android:background="@drawable/rounded_box_semi_transparent_grey"
+                        android:gravity="center"
+                        android:padding="@dimen/x15dp"
+                        android:singleLine="true"
+                        android:text="@string/logout"
+                        android:textColor="@color/c_white"
+                        android:textSize="16sp"
+                        app:typeface="@string/font_bold" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_black">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_placeholder_nurse" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+            android:id="@+id/contParentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/x200dp"
+            android:orientation="vertical"  >
+
+
+            <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9fff"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:corner_radius="@dimen/x5dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/x30dp"
+                    android:paddingBottom="@dimen/x30dp"
+                    android:src="@drawable/ic_tekrevol_logo" />
+
+
+            </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/x280dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_margin="@dimen/x10dp"-->
+    <!--android:padding="@dimen/x8dp"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--android:src="@drawable/akuh_logo"-->
+    <!--android:visibility="gone" />-->
+
+
+</RelativeLayout>

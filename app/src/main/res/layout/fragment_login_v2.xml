@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_placeholder_nurse"
+        android:scaleType="centerCrop"
+        android:alpha="0.4"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:src="@drawable/login_background" />-->
+
+        <com.jcminarro.roundkornerlayout.RoundKornerFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#bfff"
+            android:elevation="@dimen/x10dp"
+            app:corner_radius="@dimen/x10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/x10dp"
+                    android:layout_marginLeft="@dimen/x20dp"
+                    android:layout_marginRight="@dimen/x20dp"
+                    android:layout_marginTop="@dimen/x10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x100dp"
+                            android:gravity="center"
+                            android:src="@drawable/ic_tekrevol_logo" />
+
+
+                    </LinearLayout>
+
+                    <!--<AnyTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:text="Employee Health Screening"-->
+                        <!--android:textColor="@color/c_black"-->
+                        <!--android:textSize="@dimen/s12"-->
+                        <!--app:typeface="@string/font_medium" />-->
+
+                    <com.android.structure.widget.AnyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/x10dp"
+                        android:text="@string/login_text"
+                        android:textColor="@color/c_black"
+                        android:textSize="@dimen/s12"
+                        app:typeface="@string/font_medium" />
+
+                    <LinearLayout
+                        android:id="@+id/contContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.android.structure.widget.AnyEditTextView
+                            android:id="@+id/edtUserName"
+                            style="@style/Item.padding_form_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/x15dp"
+                            android:background="@drawable/rounded_box"
+                            android:drawableLeft="@drawable/user_icon"
+                            android:drawablePadding="@dimen/x5dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="User ID"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:textColor="@color/txtBlue"
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="@dimen/s14"
+                            app:testType="nocheck">
+
+                        </com.android.structure.widget.AnyEditTextView>
+
+
+                        <com.android.structure.widget.AnyEditTextView
+                            android:id="@+id/edtPassword"
+                            style="@style/Item.padding_form_field"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/x15dp"
+                            android:background="@drawable/rounded_box"
+                            android:drawableLeft="@drawable/password_icon"
+                            android:drawablePadding="@dimen/x5dp"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:maxLength="30"
+                            android:singleLine="true"
+                            android:textColor="@color/txtBlue"
+                            android:textColorHint="@color/text_hint"
+                            android:textSize="@dimen/s14"
+                            app:testType="nocheck" />
+
+                        <CheckBox
+                            android:id="@+id/cbShowPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/x15dp"
+                            android:text="Show Password"
+                            android:textColor="@color/c_black"
+                            android:textSize="@dimen/s12"
+                            android:theme="@style/CheckboxStyle" />
+
+                        <com.android.structure.widget.AnyTextView
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/x20dp"
+                             android:background="@drawable/rounded_box_filled_btn_blue"
+                            android:gravity="center"
+                            android:padding="@dimen/x5dp"
+                            android:backgroundTint="#6251FE"
+                            android:text="@string/login"
+                            android:textColor="@color/c_white"
+                            android:textSize="@dimen/s17"
+                            app:typeface="@string/font_bold" />
+
+
+                    </LinearLayout>
+
+                    <!--<AnyTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                         <!--android:text="@string/org_name"-->
+                        <!--android:textColor="@color/c_black"-->
+                        <!--android:textSize="@dimen/s12"-->
+                        <!--app:typeface="@string/font_medium" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/x1dp"
+                        android:background="@color/c_black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </com.jcminarro.roundkornerlayout.RoundKornerFrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <com.android.structure.widget.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/x1dp"
+                android:paddingTop="@dimen/x5dp"
+                android:text="Information Technology, Aga Khan University."
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/s10"
+                app:typeface="@string/font_medium" />
+
+            <com.android.structure.widget.AnyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/x5dp"
+                android:paddingTop="@dimen/x1dp"
+                android:text="© Intellectual property rights 2018. All rights reserved."
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/s10"
+                app:typeface="@string/font_medium" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
+
+

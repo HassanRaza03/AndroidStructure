@@ -1,0 +1,74 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+    <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="colorAccent">#6C0A09</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/base_amber</item>
+        <item name="colorControlHighlight">@color/base_amber</item>
+    </style>
+
+    <!-- BaseApplication theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+    <style name="SplashActivty" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--<item name="android:windowIsTranslucent">true</item>-->
+
+
+    <!-- Custom Dialog Themes-->
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+        <item name="windowMinWidthMajor">90%</item>
+    </style>
+
+
+    <style name="Item.padding_form_field" parent="Theme.AppCompat">
+        <item name="android:paddingRight">@dimen/x5dp</item>
+        <item name="android:paddingLeft">@dimen/x5dp</item>
+        <item name="android:paddingBottom">@dimen/x8dp</item>
+        <item name="android:paddingTop">@dimen/x8dp</item>
+    </style>
+
+    <!--Rating Bar-->
+
+    <!--<style name="RatingBar" parent="Theme.AppCompat">-->
+    <!--<item name="android:progressDrawable">@drawable/imgstar_rated</item>-->
+    <!--<item name="android:indeterminate">@drawable/imgstar_unrated</item>-->
+    <!--</style>-->
+
+
+    <style name="CheckboxStyle" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+        // text
+        <item name="colorControlNormal">@color/txtBlue</item>
+        // Unchecked
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        // Checked
+    </style>
+
+
+</resources>

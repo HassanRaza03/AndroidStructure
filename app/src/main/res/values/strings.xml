@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Structure</string>
+
+    <!--FONTS-->
+
+    <!--<string name="font_regular">HelveticaNeue Light.ttf</string>-->
+    <!--<string name="font_bold">HelveticaNeue Medium.ttf</string>-->
+
+    <string name="font_regular">Roboto-Light_D.ttf</string>
+    <string name="font_bold">Roboto-Medium_2.ttf</string>
+    <string name="font_medium">Roboto-Regular_1B</string>
+    <!--<string name="font_bold">Roboto-Regular_1B.ttf</string>-->
+
+    <string name="pick_image_intent_text">Choose an image</string>
+
+    <!--Side Bar-->
+    <string name="logout">Logout</string>
+    <!--Checkout Bar-->
+
+    <!--login-->
+    <!--login-->
+
+    <!--SignUp/Edit Profile-->
+    <!--SignUp/Edit Profile-->
+
+    <!--Login/SignUP-->
+    <!--Common in Login/SignUP-->
+
+    <!--verify Number-->
+    <!--verify Number-->
+
+    <!--common in Signup / verify Number/Edit Profile-->
+    <!--common in Signup / verify Number-->
+
+    <!--verification code  -->
+    <!--verification code-->
+
+    <!--fragment feedback-->
+    <!--fragment feedback-->
+
+    <!--shopping cart-->
+    <!--shopping cart-->
+
+
+    <!--sortby-->
+    <!--sortby-->
+
+    <!--success popup-->
+    <string name="title">Title</string>
+    <!--success popup-->
+
+
+    <!--popup Rating -->
+    <string name="do_you_want_to_rate_your_last_nshopping_experience">Do you want to rate your last  shopping experience?</string>
+    <string name="delivery_speed">Delivery Speed</string>
+    <string name="product_accuracy">Product accuracy</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!--popup Rating-->
+
+    <string name="login">Login</string>
+    <string name="search">Search</string>
+    <string name="areYouSureToLogout">Are you sure you want to Logout?</string>
+
+
+    <!--<string name="_s_created_group__s" formatted="false"> %s created group with \"%s\"</string>-->
+
+    <string name="typeface_not_found">Typeface %s not found, or could not be loaded. Showing default typeface. </string>
+    <string name="assets_fonts_folder">fonts/</string>
+
+    <!--<string name="next_build">This feature will be implemented in next build.</string>-->
+
+    <string name="logout_underline"><u>Logout</u></string>
+
+    <string name="password">Password</string>
+    <string name="login_text"> --------------- Log In ---------------</string>
+
+
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/x20dp"
+    android:background="@drawable/rounded_box"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/x15dp">
+
+    <com.android.structure.widget.AnyTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x5dp"
+        android:gravity="center"
+        android:minLines="2"
+        android:padding="@dimen/x5dp"
+        android:text="@string/do_you_want_to_rate_your_last_nshopping_experience"
+        android:textColor="@color/txtBlue"
+        android:textSize="18sp"
+        app:typeface="@string/font_bold" />
+
+    <com.android.structure.widget.AnyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minLines="2"
+        android:text="@string/delivery_speed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        app:typeface="@string/font_bold" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/ratingbarDeliverySpeed"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <com.android.structure.widget.AnyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minLines="2"
+        android:text="@string/product_accuracy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:typeface="@string/font_bold" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:id="@+id/ratingBarProductAccuracy"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="0"
+        android:stepSize="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x5dp"
+        android:layout_marginTop="@dimen/x10dp"
+        android:src="@drawable/imgseperator1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnYes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#0000"
+            android:padding="@dimen/x20dp"
+            android:text="@string/yes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0FFF"
+            android:padding="@dimen/x20dp"
+            android:text="@string/no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

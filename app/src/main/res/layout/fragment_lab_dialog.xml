@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/x20dp"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <com.jcminarro.roundkornerlayout.RoundKornerLinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10dp"
+        android:background="@color/c_white"
+        android:elevation="@dimen/x3dp"
+        android:orientation="vertical"
+        app:corner_radius="@dimen/x5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff9c3d"
+            android:padding="@dimen/x5dp">
+
+            <com.android.structure.widget.AnyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lab Results"
+                android:textColor="@color/c_white"
+                android:textSize="@dimen/s13"
+                app:typeface="@string/font_medium" />
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewLab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="@dimen/x200dp"
+            android:padding="@dimen/x3dp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnOK"
+            android:layout_width="@dimen/x80dp"
+            android:layout_height="@dimen/x30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/x3dp"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="@color/c_white"
+            app:fButtonColor="#ff9c3d"
+            app:shadowHeight="@dimen/x1dp" />
+
+
+    </com.jcminarro.roundkornerlayout.RoundKornerLinearLayout>
+
+
+</LinearLayout>

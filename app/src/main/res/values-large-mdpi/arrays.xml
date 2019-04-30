@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="stats_xAxis">
+        <item>Total Employees</item>
+        <item>Metabolic Syndrome</item>
+        <item>Referred</item>
+        <item>HEP C</item>
+        <item>Anemia</item>
+        <item>Psychosocial History</item>
+    </array>
+
+
+    <array name="arrYesNo">
+        <item>Yes</item>
+        <item>No</item>
+    </array>
+
+
+
+</resources>
